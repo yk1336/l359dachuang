@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>359</title>
+    <style>  
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+<!-- 顶部导航栏 -->
+<header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between h-16">
+<!-- Logo区域 -->
+<div class="flex items-center">
+<a href="#" class="flex items-center">
+<div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white text-xl font-bold">
+l359
+</div>
+<span class="ml-2 text-xl font-bold bg-gradient-to-r from-blue-600 to-pink-500 bg-clip-text text-transparent">l359l</span>
+</a>
+
+<!-- 主导航 -->
+<nav class="ml-8 hidden md:flex space-x-6">
+<a href="#" class="text-gray-900 font-medium hover:text-blue-600 transition-colors">首页</a>
+<a href="#" class="text-gray-900 font-medium hover:text-blue-600 transition-colors">动画</a>
+<a href="#" class="text-gray-900 font-medium hover:text-blue-600 transition-colors">番剧</a>
+<a href="#" class="text-gray-900 font-medium hover:text-blue-600 transition-colors">直播</a>
+<a href="#" class="text-gray-900 font-medium hover:text-blue-600 transition-colors">游戏中心</a>
+<a href="#" class="text-gray-900 font-medium hover:text-blue-600 transition-colors">会员购</a>
+</nav>
+</div>
+
+<!-- 搜索框 -->
+<div class="hidden md:block flex-1 max-w-xl mx-8">
+<div class="relative">
+<input type="text" placeholder="搜索视频、番剧、UP主..." 
+class="w-full py-2 px-4 pr-10 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+<button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-blue-600">
+<i class="fas fa-search"></i>
+</button>
+</div>
+</div>
+
+<!-- 用户区域 -->
+<div class="flex items-center space-x-4">
+<button class="hidden md:block hover:text-blue-600 transition-colors">
+<i class="fas fa-gamepad text-xl"></i>
+</button>
+<button class="hidden md:block hover:text-blue-600 transition-colors relative">
+<i class="fas fa-bell text-xl"></i>
+<span class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full text-white text-xs flex items-center justify-center">3</span>
+</button>
+<a href="#" class="w-8 h-8 rounded-full overflow-hidden border-2 border-blue-500">
+<img src="https://picsum.photos/200/200" alt="用户头像" class="w-full h-full object-cover">
+</a>
+<button class="md:hidden hover:text-blue-600 transition-colors">
+<i class="fas fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+</div>
+</header>
+
+<!-- 主内容区 -->
+<main class="container mx-auto px-4 pt-24 pb-16">
+<div class="flex flex-col md:flex-row gap-6">
+<!-- 左侧边栏 -->
+<aside class="md:w-64 lg:w-72 flex-shrink-0">
+<div class="bg-white rounded-xl shadow-sm p-4 sticky top-20">
+<div class="flex items-center mb-6">
+<a href="#" class="w-12 h-12 rounded-full overflow-hidden border-2 border-blue-500">
+<img src="https://picsum.photos/200/200" alt="用户头像" class="w-full h-full object-cover">
+</a>
+<div class="ml-3">
+<h3 class="font-semibold">l359用户12345</h3>
+<div class="flex items-center mt-1">
+<span class="text-xs bg-blue-100 text-blue-600 px-2 py-0.5 rounded-full">LV5</span>
+<button class="ml-2 text-xs text-gray-500 hover:text-blue-600">
+<i class="fas fa-pen"></i> 编辑
+</button>
+</div>
+</div>
+</div>
+
+<div class="grid grid-cols-4 gap-2 text-center mb-6">
+<div>
+<p class="font-bold text-gray-900">128</p>
+<p class="text-xs text-gray-500">关注</p>
+</div>
+<div>
+<p class="font-bold text-gray-900">3.2k</p>
+<p class="text-xs text-gray-500">粉丝</p>
+</div>
+<div>
+<p class="font-bold text-gray-900">562</p>
+<p class="text-xs text-gray-500">获赞</p>
+</div>
+<div>
+<p class="font-bold text-gray-900">124</p>
+<p class="text-xs text-gray-500">收藏</p>
+</div>
+</div>
+
+<nav>
+<ul class="space-y-1">
+<li>
+<a href="#" class="flex items-center px-3 py-2 rounded-lg bg-blue-50 text-blue-600">
+<i class="fas fa-home w-5 text-center"></i>
+<span class="ml-3">首页</span>
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
+<i class="fas fa-compass w-5 text-center"></i>
+<span class="ml-3">发现</span>
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
+<i class="fas fa-history w-5 text-center"></i>
+<span class="ml-3">历史</span>
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
+<i class="fas fa-bookmark w-5 text-center"></i>
+<span class="ml-3">收藏</span>
+</a>
+</li>
+<li>
+<a href="#" class="flex items-center px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
+<i class="fas fa-clock w-5 text-center"></i>
+<span class="ml-3">稍后观看</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
+
+<!-- 中间内容区 -->
+<div class="flex-1">
+<!-- 轮播图 -->
+<div class="rounded-xl overflow-hidden mb-8 relative h-64 md:h-80">
+<img src="https://picsum.photos/1200/400" alt="轮播图" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+<h2 class="text-white text-xl md:text-2xl font-bold mb-2">2023年最值得期待的动漫新番合集</h2>
+<p class="text-gray-200 text-sm md:text-base max-w-2xl">涵盖各种类型的热门新番，总有一部适合你</p>
+</div>
+<div class="absolute top-1/2 left-4 transform -translate-y-1/2 w-10 h-10 rounded-full bg-black/30 flex items-center justify-center text-white hover:bg-black/50 transition-colors">
+<i class="fas fa-chevron-left"></i>
+</div>
+<div class="absolute top-1/2 right-4 transform -translate-y-1/2 w-10 h-10 rounded-full bg-black/30 flex items-center justify-center text-white hover:bg-black/50 transition-colors">
+<i class="fas fa-chevron-right"></i>
+</div>
+<div class="absolute bottom-4 right-6 flex space-x-2">
+<span class="w-2 h-2 rounded-full bg-white"></span>
+<span class="w-2 h-2 rounded-full bg-white/50"></span>
+<span class="w-2 h-2 rounded-full bg-white/50"></span>
+<span class="w-2 h-2 rounded-full bg-white/50"></span>
+</div>
+</div>
+
+<!-- 分类标签 -->
+<div class="flex flex-wrap gap-2 mb-6">
+<button class="px-4 py-1.5 bg-blue-600 text-white rounded-full text-sm font-medium">推荐</button>
+<button class="px-4 py-1.5 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">动画</button>
+<button class="px-4 py-1.5 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">音乐</button>
+<button class="px-4 py-1.5 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">舞蹈</button>
+<button class="px-4 py-1.5 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">游戏</button>
+<button class="px-4 py-1.5 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">知识</button>
+<button class="px-4 py-1.5 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">科技</button>
+<button class="px-4 py-1.5 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">运动</button>
+<button class="px-4 py-1.5 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">汽车</button>
+<button class="px-4 py-1.5 bg-white text-gray-700 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">生活</button>
+</div>
+
+<!-- 视频列表 -->
+<h2 class="text-xl font-bold mb-4">热门推荐</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- 视频卡片1 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative">
+<img src="https://picsum.photos/400/225" alt="视频缩略图" class="w-full aspect-video object-cover">
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-1.5 py-0.5 rounded">05:32</span>
+<span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded flex items-center">
+<i class="fas fa-fire-alt mr-1"></i> 热门
+</span>
+</div>
+<div class="p-3">
+<h3 class="font-medium text-gray-900 line-clamp-2 mb-2 h-12">【动漫混剪】那些让你热血沸腾的名场面合集</h3>
+<div class="flex items-center text-sm text-gray-500">
+<span class="line-clamp-1 max-w-[120px]">动漫爱好者</span>
+<span class="mx-2">•</span>
+<span>24.5万 观看</span>
+</div>
+</div>
+</div>
+
+<!-- 视频卡片2 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative">
+<img src="https://picsum.photos/400/226" alt="视频缩略图" class="w-full aspect-video object-cover">
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-1.5 py-0.5 rounded">12:45</span>
+</div>
+<div class="p-3">
+<h3 class="font-medium text-gray-900 line-clamp-2 mb-2 h-12">原神3.8版本新角色测评，值得抽吗？</h3>
+<div class="flex items-center text-sm text-gray-500">
+<span class="line-clamp-1 max-w-[120px]">游戏测评君</span>
+<span class="mx-2">•</span>
+<span>18.2万 观看</span>
+</div>
+</div>
+</div>
+
+<!-- 视频卡片3 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative">
+<img src="https://picsum.photos/400/227" alt="视频缩略图" class="w-full aspect-video object-cover">
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-1.5 py-0.5 rounded">08:15</span>
+<span class="absolute top-2 left-2 bg-blue-500 text-white text-xs px-1.5 py-0.5 rounded">新上传</span>
+</div>
+<div class="p-3">
+<h3 class="font-medium text-gray-900 line-clamp-2 mb-2 h-12">2023年最新动漫推荐，这几部你绝对不能错过</h3>
+<div class="flex items-center text-sm text-gray-500">
+<span class="line-clamp-1 max-w-[120px]">二次元解说</span>
+<span class="mx-2">•</span>
+<span>12.7万 观看</span>
+</div>
+</div>
+</div>
+
+<!-- 视频卡片4 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative">
+<img src="https://picsum.photos/400/228" alt="视频缩略图" class="w-full aspect-video object-cover">
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-1.5 py-0.5 rounded">15:30</span>
+</div>
+<div class="p-3">
+<h3 class="font-medium text-gray-900 line-clamp-2 mb-2 h-12">从零开始学Python，入门到精通全套教程（第一期）</h3>
+<div class="flex items-center text-sm text-gray-500">
+<span class="line-clamp-1 max-w-[120px]">编程教学</span>
+<span class="mx-2">•</span>
+<span>36.8万 观看</span>
+</div>
+</div>
+</div>
+
+<!-- 视频卡片5 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative">
+<img src="https://picsum.photos/400/229" alt="视频缩略图" class="w-full aspect-video object-cover">
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-1.5 py-0.5 rounded">06:45</span>
+</div>
+<div class="p-3">
+<h3 class="font-medium text-gray-900 line-clamp-2 mb-2 h-12">【舞蹈翻跳】最新流行舞蹈教学，简单易学</h3>
+<div class="flex items-center text-sm text-gray-500">
+<span class="line-clamp-1 max-w-[120px]">舞蹈达人</span>
+<span class="mx-2">•</span>
+<span>9.3万 观看</span>
+</div>
+</div>
+</div>
+
+<!-- 视频卡片6 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<div class="relative">
+<img src="https://picsum.photos/400/230" alt="视频缩略图" class="w-full aspect-video object-cover">
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-1.5 py-0.5 rounded">22:18</span>
+<span class="absolute top-2 left-2 bg-purple-500 text-white text-xs px-1.5 py-0.5 rounded">直播回放</span>
+</div>
+<div class="p-3">
+<h3 class="font-medium text-gray-900 line-clamp-2 mb-2 h-12">王者荣耀：全国大赛精彩瞬间，极限操作看呆观众</h3>
+<div class="flex items-center text-sm text-gray-500">
+<span class="line-clamp-1 max-w-[120px]">电竞解说</span>
+<span class="mx-2">•</span>
+<span>52.1万 观看</span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 加载更多按钮 -->
+<div class="mt-8 text-center">
+<button class="px-6 py-2 bg-white border border-gray-300 rounded-full text-gray-700 hover:bg-gray-50 transition-colors">
+加载更多 <i class="fas fa-chevron-down ml-1"></i>
+</button>
+</div>
+</div>
+
+<!-- 右侧边栏 -->
+<aside class="hidden xl:block w-80 flex-shrink-0">
+<!-- 直播推荐 -->
+<div class="bg-white rounded-xl shadow-sm p-4 mb-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-bold text-gray-900">热门直播</h3>
+<a href="#" class="text-blue-600 text-sm hover:underline">更多</a>
+</div>
+
+<div class="space-y-4">
+<div class="flex gap-3">
+<div class="relative flex-shrink-0">
+<img src="https://picsum.photos/120/120" alt="直播缩略图" class="w-24 h-24 object-cover rounded-lg">
+<span class="absolute top-1 right-1 bg-red-500 text-white text-xs px-1 rounded flex items-center">
+<i class="fas fa-user mr-1"></i> 2.4万
+</span>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 line-clamp-2 mb-1">原神3.8版本新活动直播</h4>
+<p class="text-sm text-gray-500 line-clamp-1">原神官方直播间</p>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="relative flex-shrink-0">
+<img src="https://picsum.photos/121/121" alt="直播缩略图" class="w-24 h-24 object-cover rounded-lg">
+<span class="absolute top-1 right-1 bg-red-500 text-white text-xs px-1 rounded flex items-center">
+<i class="fas fa-user mr-1"></i> 1.8万
+</span>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 line-clamp-2 mb-1">新番《某科学的超电磁炮》最新话 reaction</h4>
+<p class="text-sm text-gray-500 line-clamp-1">动漫评论君</p>
+</div>
+</div>
+
+<div class="flex gap-3">
+<div class="relative flex-shrink-0">
+<img src="https://picsum.photos/122/122" alt="直播缩略图" class="w-24 h-24 object-cover rounded-lg">
+<span class="absolute top-1 right-1 bg-red-500 text-white text-xs px-1 rounded flex items-center">
+<i class="fas fa-user mr-1"></i> 3.2万
+</span>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 line-clamp-2 mb-1">王者荣耀：冲击王者段位直播</h4>
+<p class="text-sm text-gray-500 line-clamp-1">职业选手小明</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 排行榜 -->
+<div class="bg-white rounded-xl shadow-sm p-4">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-bold text-gray-900">全站排行榜</h3>
+<a href="#" class="text-blue-600 text-sm hover:underline">更多</a>
+</div>
+
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-red-500 text-white text-sm flex items-center justify-center font-bold">1</span>
+<img src="https://picsum.photos/80/80" alt="视频缩略图" class="w-14 h-14 object-cover rounded">
+<div class="flex-1 min-w-0">
+<h4 class="font-medium text-gray-900 text-sm line-clamp-2">【年度混剪】2023年那些让人难忘的动漫瞬间</h4>
+<p class="text-xs text-gray-500 mt-1">128.5万 观看</p>
+</div>
+</div>
+
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-red-400 text-white text-sm flex items-center justify-center font-bold">2</span>
+<img src="https://picsum.photos/81/81" alt="视频缩略图" class="w-14 h-14 object-cover rounded">
+<div class="flex-1 min-w-0">
+<h4 class="font-medium text-gray-900 text-sm line-clamp-2">原神：芙宁娜角色深度解析，值得抽吗？</h4>
+<p class="text-xs text-gray-500 mt-1">96.3万 观看</p>
+</div>
+</div>
+
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-orange-500 text-white text-sm flex items-center justify-center font-bold">3</span>
+<img src="https://picsum.photos/82/82" alt="视频缩略图" class="w-14 h-14 object-cover rounded">
+<div class="flex-1 min-w-0">
+<h4 class="font-medium text-gray-900 text-sm line-clamp-2">【科技】iPhone 15 开箱测评，值不值得升级？</h4>
+<p class="text-xs text-gray-500 mt-1">87.2万 观看</p>
+</div>
+</div>
+
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-gray-300 text-gray-800 text-sm flex items-center justify-center font-bold">4</span>
+<img src="https://picsum.photos/83/83" alt="视频缩略图" class="w-14 h-14 object-cover rounded">
+<div class="flex-1 min-w-0">
+<h4 class="font-medium text-gray-900 text-sm line-clamp-2">教你如何用5分钟制作出专业级别的视频片头</h4>
+<p class="text-xs text-gray-500 mt-1">75.8万 观看</p>
+</div>
+</div>
+
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-gray-300 text-gray-800 text-sm flex items-center justify-center font-bold">5</span>
+<img src="https://picsum.photos/84/84" alt="视频缩略图" class="w-14 h-14 object-cover rounded">
+<div class="flex-1 min-w-0">
+<h4 class="font-medium text-gray-900 text-sm line-clamp-2">周杰伦演唱会全程回顾，经典歌曲串烧</h4>
+<p class="text-xs text-gray-500 mt-1">68.4万 观看</p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+
+<!-- 页脚 -->
+<footer class="bg-gray-900 text-gray-400 py-10">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between">
+<div class="mb-8 md:mb-0">
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white text-xl font-bold">
+l359
+</div>
+<span class="ml-2 text-xl font-bold text-white">l359l</span>
+</div>
+<p class="text-sm max-w-md">l359l359（l359l）是中国领先的视频弹幕网站，这里有最及时的动漫新番，最棒的ACG氛围，最有创意的Up主。</p>
+<div class="flex space-x-4 mt-4">
+<a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-weibo text-xl"></i></a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-weixin text-xl"></i></a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter text-xl"></i></a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-youtube text-xl"></i></a>
+</div>
+</div>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div>
+<h4 class="text-white font-medium mb-4">关于我们</h4>
+<ul class="space-y-2 text-sm">
+<li><a href="#" class="hover:text-white transition-colors">公司介绍</a></li>
+<li><a href="#" class="hover:text-white transition-colors">联系我们</a></li>
+<li><a href="#" class="hover:text-white transition-colors">加入我们</a></li>
+<li><a href="#" class="hover:text-white transition-colors">投资者关系</a></li>
+</ul>
+</div>
+
+<div>
+<h4 class="text-white font-medium mb-4">帮助中心</h4>
+<ul class="space-y-2 text-sm">
+<li><a href="#" class="hover:text-white transition-colors">账号相关</a></li>
+<li><a href="#" class="hover:text-white transition-colors">视频投稿</a></li>
+<li><a href="#" class="hover:text-white transition-colors">付费服务</a></li>
+<li><a href="#" class="hover:text-white transition-colors">举报中心</a></li>
+</ul>
+</div>
+
+<div>
+<h4 class="text-white font-medium mb-4">增值服务</h4>
+<ul class="space-y-2 text-sm">
+<li><a href="#" class="hover:text-white transition-colors">大会员</a></li>
+<li><a href="#" class="hover:text-white transition-colors">课堂</a></li>
+<li><a href="#" class="hover:text-white transition-colors">漫画</a></li>
+<li><a href="#" class="hover:text-white transition-colors">游戏中心</a></li>
+</ul>
+</div>
+
+<div>
+<h4 class="text-white font-medium mb-4">客户端下载</h4>
+<div class="bg-gray-800 p-3 rounded-lg w-32">
+<img src="https://picsum.photos/120/120" alt="手机客户端二维码" class="w-full h-auto">
+<p class="text-center text-xs mt-2">扫码下载APP</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
+<p>© 2023 l359l359 l359l.com 版权所有</p>
+<p class="mt-2">互联网新闻信息服务许可证：31120170006 | 沪ICP备13002172号-3</p>
+</div>
+</div>
+</footer>
+
+<!-- 返回顶部按钮 -->
+<button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:bg-blue-700">
+<i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- JavaScript -->
+<script>
+// 返回顶部按钮功能
+const backToTopButton = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+	if (window.pageYOffset > 300) {
+		backToTopButton.classList.remove('opacity-0', 'invisible');
+		backToTopButton.classList.add('opacity-100', 'visible');
+	} else {
+		backToTopButton.classList.remove('opacity-100', 'visible');
+		backToTopButton.classList.add('opacity-0', 'invisible');
+	}
+});
+
+backToTopButton.addEventListener('click', () => {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	});
+});
+</script>
+</body>
+
+    </script>
+</body>
+
+  </body>
+</html>
