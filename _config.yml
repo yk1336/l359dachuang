@@ -1,0 +1,32 @@
+# 核心配置（必须正确填写）
+title: My GitHub Pages
+description: A simple and runnable GitHub Pages site
+baseurl: ""  # 若部署在 https://yk1336.github.io，直接留空；若部署在子路径（如 /repo），填 /repo
+url: "https://yk1336.github.io"  # 替换为你的 GitHub Pages 地址（必须正确）
+
+# 构建引擎（GitHub Pages 官方支持，无需修改）
+markdown: kramdown
+kramdown:
+  input: GFM  # 支持 GitHub Flavored Markdown
+  syntax_highlighter: rouge  # 代码高亮（官方默认）
+
+# 主题（官方内置，无需额外安装）
+theme: minima  # 轻量、稳定，GitHub Pages 原生支持
+
+# 官方插件（无需手动安装，GitHub 自动加载）
+plugins:
+  - jekyll-seo-tag  # SEO 优化（自动生成元标签）
+  - jekyll-relative-links  # 相对链接支持（避免路径错误）
+  - jekyll-readme-index  # 若仓库有 README.md，自动作为首页（可选但实用）
+
+# 文件路径规则（确保构建时包含关键文件）
+include:
+  - index.html  # 强制包含首页（必须有该文件）
+  - _posts  # 博客文章目录（若无博客可删除）
+exclude:
+  - Gemfile
+  - Gemfile.lock  # 排除开发依赖，避免构建冲突
+
+# 可选优化配置
+permalink: /:title/  # 文章链接格式（简洁易记）
+paginate: 6  # 分页每页显示文章数（若无博客可删除）
