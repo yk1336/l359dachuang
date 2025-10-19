@@ -1,0 +1,29 @@
+# 站点基础信息
+title: 我的GitHub Pages站点
+description: 这里是站点的描述信息
+baseurl: "" # 若站点部署在子路径（如 https://username.github.io/repo），需填 /repo
+url: "https://yk1336.github.io" # 你的GitHub Pages访问地址
+
+# 构建引擎与格式
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# 主题与插件（GitHub Pages 支持的官方插件）
+theme: jekyll-theme-primer # 可选主题，也可自定义
+plugins:
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-relative-links
+
+# 目录与文件包含规则
+include:
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# 自定义链接格式（可选）
+permalink: /:title/
